@@ -1,0 +1,10 @@
+[webservers]
+web01 ansible_host=172.31.18.203 ansible_ssh_user='ec2-user'
+web02 ansible_host=172.31.19.121 ansible_ssh_user='ec2-user'
+
+[db]
+db01 ansible_host=172.31.42.217 ansible_ssh_user='ubuntu'
+
+[lb]
+172.31.26.42 ansible_ssh_user='ec2-user'
+
