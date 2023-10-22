@@ -17,5 +17,29 @@
         }
       }
     }
+
+    stage('Package') {
+      steps {
+        script {
+          sh 'echo "Packaging stage"'  
+        }
+      }  
+    }
+
+    stage ('Deployment') {
+      steps {
+        script {
+          sh 'echo "This is Deployment stage"'  
+        }
+      }  
+    }
+
+    stage ('clean workspace') {
+      steps {
+        script {
+          sh 'echo "This is cleaning stage"'  
+        }
+      }  
+    }
     }
 }
